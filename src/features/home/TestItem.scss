@@ -1,0 +1,115 @@
+@import '../../styles/mixins';
+
+.test-item {
+  margin-bottom: 16px;
+  display: flex;
+  width: 50%;
+  &:nth-child(2n + 1) {
+    padding-right: 8px;
+  }
+  &:nth-child(2n) {
+    padding-left: 8px;
+  }
+
+  .box-content {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: rgba(235, 232, 232, 0.498) 0px 1px 4px 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 16px 24px;
+    flex: 1 1 0%;
+
+    .wrap-title {
+      &:hover .list-icon {
+        display: block;
+      }
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+
+      .title {
+        flex-grow: 1;
+        color: rgb(59, 59, 59);
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.5em;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+      }
+
+      .list-icon {
+        display: none;
+        position: absolute;
+        align-items: flex-start;
+        z-index: 5;
+        right: 24px;
+        top: 16px;
+        background-color: rgb(255, 255, 255);
+        padding-left: 8px;
+
+        .icon {
+          display: flex;
+          justify-content: space-around;
+          width: 125px;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      .info-or {
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0;
+        .wrap-rating {
+          margin-left: 8px;
+
+          .total-rating {
+            margin-left: 8px;
+          }
+        }
+
+        .text-icon {
+          margin-right: 10px;
+        }
+      }
+
+      .info-qtv-tag {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        .qtv {
+          display: flex;
+        }
+        .list-tag {
+          flex-wrap: wrap;
+          align-items: center;
+          margin-top: 16px;
+          display: flex;
+          flex-grow: 1;
+          flex-direction: row;
+        }
+      }
+
+      .info-description {
+        margin-top: 4px;
+        p {
+          font-size: 15px;
+          color: rgb(153, 153, 153);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .test-item {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+  }
+}

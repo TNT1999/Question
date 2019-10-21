@@ -1,0 +1,23 @@
+@import '../../styles/mixins';
+
+.w-question {
+  margin-left: 316px;
+  margin-top: 64px;
+  background-color: #f8f8f8;
+  flex: 1 1 0%;
+  .f-question {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 8px;
+    box-shadow: 0 0 10px #c5c5c5;
+    label {
+      margin-bottom: 16px;
+      width: fit-content;
+      font-weight: 500;
+      color: rgb(9, 132, 227);
+    }
+  }
+}

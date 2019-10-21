@@ -1,0 +1,11 @@
+export { default as App } from './App';
+export { default as DefaultPage } from './DefaultPage';
+export { default as Answer } from './Answer';
+export { default as Question } from './Question';
+export { default as ListAnswer } from './ListAnswer';
+export { default as FQuestion } from './FQuestion';
+export { default as Home } from './Home';
+export { default as ListTest } from './ListTest';
+export { default as Tag } from './Tag';
+export { default as TestItem } from './TestItem';
+export { default as Trs } from './Trs';

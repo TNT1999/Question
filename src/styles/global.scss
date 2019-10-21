@@ -1,0 +1,23 @@
+@import './mixins';
+@import '~normalize.css';
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+
+// Here you put all global css rules.
+a{
+  text-decoration: none !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border:0;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;
+  font-size: 16px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafbfb;
+  font-weight: 400;
+  outline: 0;
+}
